@@ -8,7 +8,7 @@ An icon shows state of extension in address bar. For now extension works only fo
 You can install this extension from Chrome Storage (https://chrome.google.com/webstore/detail/wialon-notifications/cclidjijpfdlndhdoeecoonolekndoak?hl=ru)
 
 ## License
-LGPL: http://www.gnu.org/licenses/lgpl.html
+[The MIT License](../master/LICENSE-MIT)
 
 ## Requirements
  * Browser: Google Chrome 20+
