@@ -1,28 +1,32 @@
 <html>
-  <head>
-    <style>
-      .info {
-        width: 130px;
-        border: 1px solid #C5C23F;
-        background: #F4F7B7;
-        font-family: arial;
-        padding: 5px;
-        font-size: 11px;
-      }
-    </style>
-    <script>
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-42824848-4']);
-      _gaq.push(['_trackPageview']);
+	<head>
+		<style>
+			.info {
+				width: 130px;
+				border: 1px solid #C5C23F;
+				background: #F4F7B7;
+				font-family: arial;
+				padding: 5px;
+				font-size: 11px;
+			}
+			.hidden {
+				display: none;
+			}
+		</style>
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-42824848-4']);
+			_gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = 'https://ssl.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </head>
-  <body>
-    <div class="info">Configuration will be added in next release</div>
-  </body>
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = 'https://ssl.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="info" id="info">Configuration will be added in next release</div>
+		<input id="state" type="checkbox"> <label for="state">Enable Notifications?</label>
+	</body>
 </html>

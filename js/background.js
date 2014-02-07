@@ -11,7 +11,7 @@ function notify (type, message, name, tabId) {
 			content = 'New image received!';
 			break;
 		case "sos":
-			title = "SOS from";
+			title = "SOS from ";
 			content = '';
 			break;
 		default:
@@ -35,7 +35,13 @@ chrome.extension.onMessage.addListener(
 	function(request, sender, sendResponse) {
 		// console.log("Wialon Notify: ", request);
 		// chrome.tabs.highlight({tabs:sender.tab.id}, function(){console.log(sender.tab.id, arguments)})
-		notify(request.msg_type, request.message, request.name, sender.tab.id);
+		if(request) {
+			if(request.msg_type == 'system') {
+					chrome.pageAction.setIcon({tabId: sender.tab.id, path: 'img/wialon_notify_blue24.png'});
+			} else {
+					notify(request.msg_type, request.message, request.name, sender.tab.id);
+			}
+		}
 		sendResponse({text: "Request received"});
 	}
 );
