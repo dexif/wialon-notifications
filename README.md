@@ -1,4 +1,4 @@
-# Wialon Notifications, version 0.1.3: (November 25, 2013)
+# Wialon Notifications, version 0.1.4: (February 08, 2014)
 This is Google Chrome Extension for Wialon Hosting users. (http://hosting.wialon.com).
 
 ## Description
@@ -17,3 +17,4 @@ You can install this extension from Chrome Storage (https://chrome.google.com/we
 
 ## Releases
  * 2013-11-26   v0.1.3   initial release
+ * 2014-02-08   v0.1.4   small fixes + added blue status icon (connected)
